@@ -15,7 +15,7 @@ RUN apt install -y software-properties-common
 RUN add-apt-repository ppa:ondrej/php
 RUN apt update
 
-RUN apt install -y nginx php7.4-fpm php7.4-soap php7.4-curl php7.4-cli php7.4 php7.4-json php7.4-mbstring php7.4-mysql php7.4-opcache php7.4-readline php7.4-xml php7.4-zip php-imagick supervisor unzip git && \
+RUN apt install -y nginx php7.4-fpm php7.4-soap php7.4-curl php7.4-cli php7.4 php7.4-json php7.4-mbstring php7.4-mysql php7.4-opcache php7.4-readline php7.4-xml php7.4-zip php-imagick supervisor unzip zip qrencode git && \
     rm -rf /var/lib/apt/lists/* && \
     apt clean
 
